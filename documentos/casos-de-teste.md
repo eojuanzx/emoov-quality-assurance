@@ -36,7 +36,7 @@ Status `200 OK` e token retornado com sucesso.
 
 ### Evidência
 
-![CT-LOGIN-001](../evidencias/login/CT-LOGIN-001.jpeg)
+<img src="../evidencias/login/CT-LOGIN-001.jpeg" width="850">
 
 
 ---
