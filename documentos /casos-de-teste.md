@@ -6,14 +6,14 @@ Este documento apresenta os casos de teste manuais executados na API do sistema 
 
 ## Resumo dos Testes
 
-| Módulo | Quantidade |
-|---|---:|
-| Login | 2 |
-| Funcionários | 3 |
-| Motoristas | 3 |
-| Veículos | 3 |
-| Corridas | 1 |
-| **Total** | **12** |
+| Módulo       | Quantidade |
+| ------------ | ---------: |
+| Login        |          2 |
+| Funcionários |          3 |
+| Motoristas   |          3 |
+| Veículos     |          3 |
+| Corridas     |          1 |
+| **Total**    |     **12** |
 
 ---
 
@@ -23,19 +23,20 @@ Este documento apresenta os casos de teste manuais executados na API do sistema 
 
 **Objetivo:** Validar que o sistema permite autenticação com usuário e senha corretos.
 
-**Método:** POST  
+**Método:** POST
 **Endpoint:** `/auth/login`
 
-**Resultado esperado:**  
+**Resultado esperado:**
 Retornar status `200 OK` e token de autenticação.
 
-**Resultado obtido:**  
+**Resultado obtido:**
 Status `200 OK` e token retornado com sucesso.
 
-**Status:** Aprovado
+**Status:** ✅ Aprovado
 
-**Evidência:**  
-`evidencias/login/CT-LOGIN-001.png`
+### Evidência
+
+<img src="../evidencias/login/CT-LOGIN-001.jpeg" width="850">
 
 ---
 
@@ -43,19 +44,20 @@ Status `200 OK` e token retornado com sucesso.
 
 **Objetivo:** Validar que o sistema não permite autenticação com senha incorreta.
 
-**Método:** POST  
+**Método:** POST
 **Endpoint:** `/auth/login`
 
-**Resultado esperado:**  
+**Resultado esperado:**
 Retornar status `401 Unauthorized`.
 
-**Resultado obtido:**  
+**Resultado obtido:**
 Status `401 Unauthorized`.
 
-**Status:** Aprovado
+**Status:** ✅ Aprovado
 
-**Evidência:**  
-`evidencias/login/CT-LOGIN-002.png`
+### Evidência
+
+<img src="../evidencias/login/CT-LOGIN-002.jpeg" width="850">
 
 ---
 
@@ -63,61 +65,31 @@ Status `401 Unauthorized`.
 
 ## CT-FUNC-001 - Cadastro de funcionário
 
-**Objetivo:** Validar o cadastro de um funcionário com dados válidos.
+...
 
-**Método:** POST  
-**Endpoint:** `/funcionario`
+### Evidência
 
-**Resultado esperado:**  
-Funcionário cadastrado com sucesso.
-
-**Resultado obtido:**  
-Funcionário cadastrado com sucesso.
-
-**Status:** Aprovado
-
-**Evidência:**  
-`evidencias/funcionarios/CT-FUNC-001.png`
+<img src="../evidencias/funcionarios/CT-FUNC-001.jpeg" width="850">
 
 ---
 
 ## CT-FUNC-002 - Listagem de funcionários
 
-**Objetivo:** Validar a listagem dos funcionários cadastrados.
+...
 
-**Método:** GET  
-**Endpoint:** `/funcionario`
+### Evidência
 
-**Resultado esperado:**  
-Retornar a lista de funcionários.
-
-**Resultado obtido:**  
-Lista de funcionários retornada com sucesso.
-
-**Status:** Aprovado
-
-**Evidência:**  
-`evidencias/funcionarios/CT-FUNC-002.png`
+<img src="../evidencias/funcionarios/CT-FUNC-002.jpeg" width="850">
 
 ---
 
 ## CT-FUNC-003 - Atualização de funcionário
 
-**Objetivo:** Validar a atualização dos dados de um funcionário existente.
+...
 
-**Método:** PUT  
-**Endpoint:** `/funcionario/{id}`
+### Evidência
 
-**Resultado esperado:**  
-Funcionário atualizado com sucesso.
-
-**Resultado obtido:**  
-Funcionário atualizado com sucesso.
-
-**Status:** Aprovado
-
-**Evidência:**  
-`evidencias/funcionarios/CT-FUNC-003.png`
+<img src="../evidencias/funcionarios/CT-FUNC-003.jpeg" width="850">
 
 ---
 
@@ -125,61 +97,31 @@ Funcionário atualizado com sucesso.
 
 ## CT-MOT-001 - Cadastro de motorista
 
-**Objetivo:** Validar o cadastro de um motorista com dados válidos.
+...
 
-**Método:** POST  
-**Endpoint:** `/motorista`
+### Evidência
 
-**Resultado esperado:**  
-Motorista cadastrado com sucesso.
-
-**Resultado obtido:**  
-Motorista cadastrado com sucesso.
-
-**Status:** Aprovado
-
-**Evidência:**  
-`evidencias/motoristas/CT-MOT-001.png`
+<img src="../evidencias/motoristas/CT-MOT-001.jpeg" width="850">
 
 ---
 
 ## CT-MOT-002 - Listagem de motoristas
 
-**Objetivo:** Validar a listagem dos motoristas cadastrados.
+...
 
-**Método:** GET  
-**Endpoint:** `/motorista`
+### Evidência
 
-**Resultado esperado:**  
-Retornar a lista de motoristas.
-
-**Resultado obtido:**  
-Lista de motoristas retornada com sucesso.
-
-**Status:** Aprovado
-
-**Evidência:**  
-`evidencias/motoristas/CT-MOT-002.png`
+<img src="../evidencias/motoristas/CT-MOT-002.jpeg" width="850">
 
 ---
 
 ## CT-MOT-003 - Cadastro com prontuário duplicado
 
-**Objetivo:** Validar que o sistema não permite cadastrar motorista com prontuário já existente.
+...
 
-**Método:** POST  
-**Endpoint:** `/motorista`
+### Evidência
 
-**Resultado esperado:**  
-Retornar erro informando duplicidade ou impedir o cadastro.
-
-**Resultado obtido:**  
-Cadastro não realizado devido ao prontuário duplicado.
-
-**Status:** Aprovado
-
-**Evidência:**  
-`evidencias/motoristas/CT-MOT-003.png`
+<img src="../evidencias/motoristas/CT-MOT-003.jpeg" width="850">
 
 ---
 
@@ -187,61 +129,31 @@ Cadastro não realizado devido ao prontuário duplicado.
 
 ## CT-VEI-001 - Cadastro de veículo
 
-**Objetivo:** Validar o cadastro de um veículo com dados válidos.
+...
 
-**Método:** POST  
-**Endpoint:** `/veiculo`
+### Evidência
 
-**Resultado esperado:**  
-Veículo cadastrado com sucesso.
-
-**Resultado obtido:**  
-Veículo cadastrado com sucesso.
-
-**Status:** Aprovado
-
-**Evidência:**  
-`evidencias/veiculos/CT-VEI-001.png`
+<img src="../evidencias/veiculos/CT-VEI-001.jpeg" width="850">
 
 ---
 
 ## CT-VEI-002 - Listagem de veículos
 
-**Objetivo:** Validar a listagem dos veículos cadastrados.
+...
 
-**Método:** GET  
-**Endpoint:** `/veiculo`
+### Evidência
 
-**Resultado esperado:**  
-Retornar a lista de veículos.
-
-**Resultado obtido:**  
-Lista de veículos retornada com sucesso.
-
-**Status:** Aprovado
-
-**Evidência:**  
-`evidencias/veiculos/CT-VEI-002.png`
+<img src="../evidencias/veiculos/CT-VEI-002.jpeg" width="850">
 
 ---
 
 ## CT-VEI-003 - Cadastro com placa duplicada
 
-**Objetivo:** Validar que o sistema não permite cadastrar veículo com placa já existente.
+...
 
-**Método:** POST  
-**Endpoint:** `/veiculo`
+### Evidência
 
-**Resultado esperado:**  
-Retornar erro informando duplicidade ou impedir o cadastro.
-
-**Resultado obtido:**  
-Cadastro não realizado devido à placa duplicada.
-
-**Status:** Aprovado
-
-**Evidência:**  
-`evidencias/veiculos/CT-VEI-003.png`
+<img src="../evidencias/veiculos/CT-VEI-003.jpeg" width="850">
 
 ---
 
@@ -249,21 +161,11 @@ Cadastro não realizado devido à placa duplicada.
 
 ## CT-COR-001 - Criação de solicitação de corrida
 
-**Objetivo:** Validar a criação de uma solicitação de corrida com dados válidos.
+...
 
-**Método:** POST  
-**Endpoint:** `/corridas`
+### Evidência
 
-**Resultado esperado:**  
-Corrida criada com sucesso.
-
-**Resultado obtido:**  
-Corrida criada com sucesso.
-
-**Status:** Aprovado
-
-**Evidência:**  
-`evidencias/corridas/CT-COR-001.png`
+<img src="../evidencias/corridas/CT-COR-001.jpeg" width="850">
 
 ---
 
